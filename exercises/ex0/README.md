@@ -57,10 +57,10 @@ In this exercise, you will choose a unique suffix for your development objects a
 
 2. **Resolve the short URL** provided by the instructor team in the handout as follows: 
 
-    - Start the browser by double-clicking the icon on the desktop
-    - Type the short link from the handout into the address bar of your browser and press **Enter**
-    - Click the link **'tdct3----.accounts.ondemand.com'**
-    - Enter the user credentials provided in the handout and press **Confirm** to sign in   
+    - Start the browser by double-clicking the icon on the desktop.
+    - Type the short link from the handout into the address bar of your browser and press **Enter**.
+    - If the **Welcome to ABAP_TARGET!** page appears, click the link **`tdct3----.accounts.ondemand.com`** to continue.
+    - Enter the user credentials provided in the handout and press **Confirm** to sign in.   
 
       | Property | Value |
       | -- | -- |
