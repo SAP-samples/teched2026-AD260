@@ -26,7 +26,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 > At the **SAP TechEd Berlin**, you will use your seat number as suffix if no other suffix has been assigned to you by the 🗣️speaker team.
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>🔵 Click to expand!</summary>
    
 1. Throughout the exercises of this hands-on workshop, you'll be requested to replace the placeholder **`###`** with your personal unique suffix.
 
@@ -51,7 +51,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 > Create an _**ABAP Cloud Project**_ in your ADT installation to connect it to the provided **SAP Business AI Platform, ABAP environment** system.
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>🔵 Click to expand!</summary>
   <br/>
    
 1.Open the ABAP Development Tools (ADT) for Eclipse and open the **ABAP** perspective if not yet open.
