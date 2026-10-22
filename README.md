@@ -24,11 +24,11 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 
 <!--
 - [Requirements for attending this workshop](#requirements-for-attending-this-workshop) 
+- [Solution Package](#solution-package)
 --> 
 
 - [Overview](#overview)
 - [Exercises](#exercises)
-- [Solution Package](#solution-package)
 - [Known Issues](#known-issues)
 - [How to obtain support](#how-to-obtain-support)
 - [Further Information](#further-information)
@@ -147,12 +147,13 @@ In this exercise block, you build a new consumption app with basic analytical ca
 | [Exercise 6: Work with the Read-Only RAP Analytical Table](exercises/ex06/README.md) | -- |
 
 
+<!--
+
 ## Solution Package
 [^Top of page](#)
 
 You can find the resulting apps in the solution package ![package](exercises/images/adt_package.png)**`ZRAP201_SOL`** in the dedicated SAP TechEd system.
 
-<!--
 > You can import the solution package ![package](exercises/images/adt_package.png)**`ZRAP201_SOL`** into the following systems:
 > - SAP Business AI Platform, ABAP environment
 > - SAP S/4HANA Cloud Public Edition
