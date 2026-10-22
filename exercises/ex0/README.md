@@ -86,9 +86,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 
    Proceed with the following steps if you're not logged in automatically:
 
-   - Choose the identity provider **`tdct3----.accounts.ondemand.com`** in the browser to sign in, if requested.   
-   
-     > <img alt="Sign in - IDP Choice" src="images/idp_choice.png" width="30%">
+   - If the **Welcome to ABAP_TARGET!** page appears, choose the identity provider **`tdct3----.accounts.ondemand.com`** in the browser to continue.   
 
    - Sign in with the user credentials provided in the handout:
    
