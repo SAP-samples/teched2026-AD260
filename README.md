@@ -153,10 +153,10 @@ In this exercise block, you build a new consumption app with basic analytical ca
 ## Solution Package
 [^Top of page](#)
 
-You can find the resulting apps in the solution package **`ZRAP201_SOL`** in the dedicated SAP TechEd system.
+You can find the resulting apps in the solution package ![package](exercises/images/adt_package.png)**`ZRAP201_SOL`** in the dedicated SAP TechEd system.
 
 <!--
-> You can import the solution package **`ZRAP201_SOL`** into the following systems:
+> You can import the solution package ![package](exercises/images/adt_package.png)**`ZRAP201_SOL`** into the following systems:
 > - SAP Business AI Platform, ABAP environment
 > - SAP S/4HANA Cloud Public Edition
 
