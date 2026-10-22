@@ -80,8 +80,9 @@ In this exercise, you will choose a unique suffix for your development objects a
     
       You will use it in the next step to create your ABAP Cloud project in ADT.
     
-      > ℹ️ Note: Copy the URL without the `/ui#Shell-home` part at the end!   
-      > - ABAP Service Instance URL: `https://<instance_number>.abap.<region>.hana.ondemand.com`
+      >> ℹ️ Copy the URL without the `/ui#Shell-home` part at the end!
+      >> 
+      >> ABAP Service Instance URL: `https://<instance_number>.abap.<region>.hana.ondemand.com`
 
    <img alt="Resolving short URl" src="images/ex0-resolve-short-url.png" width="100%">
 
