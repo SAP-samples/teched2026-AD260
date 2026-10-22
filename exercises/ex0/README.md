@@ -118,12 +118,12 @@ In this exercise, you will choose a unique suffix for your development objects a
 <details>
   <summary>🔵 Click to expand!</summary>
 
-1. You can add the solution package **`ZRAP201_SOL`** as favorite package in the **Project Explorer**. 
+1. You can add the solution package ![package](../images/adt_package.png)**`ZRAP201_SOL`** as favorite package in the **Project Explorer**. 
 
    To achieve that,
    - right-click on the **Favorite Packages**,
    - select **Add Package...** from the context menu,
-   - then enter the name of the package in the dialog: **`ZRAP201_SOL`**,
+   - then enter the name of the package in the dialog: ![package](../images/adt_package.png)**`ZRAP201_SOL`**,
    - select the entry, and press **OK** to confirm.
      
    <br/>
