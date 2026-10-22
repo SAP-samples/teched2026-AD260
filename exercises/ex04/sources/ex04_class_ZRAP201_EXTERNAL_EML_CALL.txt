@@ -1,0 +1,91 @@
+ CLASS zrap201_external_eml_call_### DEFINITION
+   PUBLIC
+   FINAL
+   CREATE PUBLIC .
+
+   PUBLIC SECTION.
+     INTERFACES if_oo_adt_classrun.
+
+     METHODS:
+       "! Constructor method
+       constructor IMPORTING i_rap_bo_key TYPE sysuuid_x16 OPTIONAL
+                             i_travel_id  TYPE /dmo/travel_id OPTIONAL,
+
+       "! This method simulates a dummy, time-intensive review workflow (WF) process.
+       review_travel_bo RETURNING VALUE(notification) TYPE string.
+
+   PROTECTED SECTION.
+
+   PRIVATE SECTION.
+     DATA:
+       rap_bo_key TYPE sysuuid_x16,
+       travel_id  TYPE /dmo/travel_id.
+
+ ENDCLASS.
+
+
+ CLASS zrap201_external_eml_call_### IMPLEMENTATION.
+
+   METHOD constructor.
+     rap_bo_key = i_rap_bo_key.
+     travel_id  = i_travel_id.
+   ENDMETHOD.
+
+   METHOD if_oo_adt_classrun~main.
+
+     "enter the Travel ID of a new or cancelled travel record to be updated
+     travel_id  = 00000092.   "numc(8)
+
+     "read the technical key of the travel record from the database table
+     SELECT SINGLE uuid FROM zr_traveltp###
+         WHERE TravelID = @travel_id
+         INTO @rap_bo_key .
+
+     CHECK rap_bo_key IS NOT INITIAL.
+
+     "call the dummy review workflow
+     DATA(notification) = review_travel_bo( ).
+
+     out->write( | [Info] Travel review workflow executed for { travel_id }. | ).
+   ENDMETHOD.
+
+
+   METHOD review_travel_bo.
+     DATA: status        TYPE /dmo/travel_status,
+           review_status TYPE int1.
+
+     "dummy time-intensive review workflow process
+     SELECT SINGLE TotalPrice FROM zr_traveltp###
+         WHERE uuid = @rap_bo_key
+         INTO @DATA(total_price).
+
+     WAIT UP TO 5 SECONDS.
+
+     IF total_price < 3000 AND total_price > 0.
+       review_status = zrap201_if_traveltp###=>review_status-booked.
+       status = zrap201_if_traveltp###=>travel_status-booked.
+       notification = |Travel booked by review WF ({ cl_abap_context_info=>get_system_time(  ) })|.
+     ELSE.
+       review_status = zrap201_if_traveltp###=>review_status-cancelled.
+       status = zrap201_if_traveltp###=>travel_status-cancelled.
+       notification = |Travel cancelled by review WF ({ cl_abap_context_info=>get_system_time(  ) })|.
+     ENDIF.
+
+     "modify relevant travel instance
+     MODIFY ENTITIES OF zr_traveltp###
+        ENTITY TravelTP
+        UPDATE FIELDS ( Status ReviewStatus Notification )
+        WITH VALUE #( ( %tky-uuid    = rap_bo_key
+                        status       = status
+                        reviewStatus = review_status
+                        notification = notification  ) )
+     FAILED DATA(modify_failed)
+     REPORTED DATA(modify_reported).
+
+     "commit changes
+     COMMIT ENTITIES RESPONSES
+         FAILED   DATA(commit_failed)
+         REPORTED DATA(commit_reported).
+   ENDMETHOD.
+
+ ENDCLASS.
