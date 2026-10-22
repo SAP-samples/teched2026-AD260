@@ -118,7 +118,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 
 ## Exercise 0.3: Solution Package
 
-> Participants of SAP-led events, such as on-site SAP TechEd 2026 events, will find the solution package `ZRAP201_SOL` in the dedicated ABAP system provided by SAP.
+> Participants of SAP-led events, such as on-site SAP TechEd 2026 events, will find the solution package ![package](../images/adt_package.png)`ZRAP201_SOL` in the dedicated ABAP system provided by SAP.
 
 <details>
   <summary>🔵 Click to expand!</summary>
