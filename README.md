@@ -60,7 +60,7 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 ## Overview
 [^Top of page](#)
 
-> In this hands-on workshop, you will build and enhance an SAP Fiori elements-based _Travel Processing_ application (_Travel_ app in short) using the ABAP RESTful Application Programming Model (RAP). You will generate a transactional UI service, enhance it with business logic, add collaborative draft handling, implement event-driven side effects, and create a read-only analytical table.
+In this hands-on workshop, you will build and enhance an SAP Fiori elements-based _Travel Processing_ application (_Travel_ app for short) using recent innovations delivered in the ABAP RESTful Application Programming Model (RAP), which is at the center of the ABAP Cloud development model when it comes to building transactional business apps, local APIs, and OData-based web services.
 
 <details>
   <summary>🔵 Click to expand!</summary>
