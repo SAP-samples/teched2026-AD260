@@ -22,8 +22,12 @@ In this exercise, you will choose a unique suffix for your development objects a
 ## Exercise 0.1: Identify Your Personal Suffix
 
 > Discover your personal unique suffix `###` that you will use throughout all exercises to make your development objects unique.
+
+> [!NOTE]
 > 
-> At the **SAP TechEd Berlin**, you will use your seat number as suffix if no other suffix has been assigned to you by the 🗣️speaker team.
+> At **SAP TechEd Berlin**, you will use the unique suffix assigned to you by the 🗣️speaker team (see handout) – which is your seat number **`###`**.  
+
+<!--
 
 <details>
   <summary>🔵 Click to expand!</summary>
@@ -41,10 +45,11 @@ In this exercise, you will choose a unique suffix for your development objects a
    | A | 001 | **`001`** |
    | B | 041 | **`041`** |
 
-
 3. 💡 Write down your personal suffix so you don't forget it.
 
 </details>
+
+-->
 
 ## Exercise 0.2: Create an _ABAP Cloud Project_ in ADT
 
