@@ -74,7 +74,7 @@ In this exercise, you will choose a unique suffix for your development objects a
       | E-Mail or User Name: | **AD260-###@education.cloud.sap** (where `###` is your personal suffix)  |
       | Password: | _provided in the handout or by the speaker team_ |
           
-      The cockpit of the SAP BAIP, ABAP environment is now opened.
+      The **Fiori Launchpad** of the SAP BAIP, ABAP environment is now opened.
 
     - Now, copy the ABAP system URL from the address bar to the clipboard.  
     
