@@ -6,7 +6,7 @@
 
 In this exercise, you will choose a unique suffix for your development objects and verify if your development environment is ready.
 
-### Exercises
+## Exercises
 
 - [0.1 - Identify Your Personal Suffix](#exercise-01-identify-your-personal-suffix)
 - [0.2 - Create an _ABAP Cloud Project_ in ADT](#exercise-02-create-an-abap-cloud-project-in-adt)
@@ -14,9 +14,12 @@ In this exercise, you will choose a unique suffix for your development objects a
 - [0.4 - Useful information](#exercise-04-useful-information)
 - [Summary & Next Exercise](#summary--next-exercise)
 
-> ℹ️ **Reminder**: Don't forget to replace all occurrences of the placeholder **`###`** with your group ID in the exercise steps below.
+> [!NOTE]
+> **Reminder**: Remember to replace all occurrences of the placeholder **`###`** with your personal suffix in all exercise steps.
 
-## Exercise 0.1: Identify Your Personal Suffix
+---
+
+### Exercise 0.1: Identify Your Personal Suffix
 
 > Discover your personal unique suffix `###` that you will use throughout all exercises to make your development objects unique.
 > 
@@ -43,7 +46,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 
 </details>
 
-## Exercise 0.2: Create an _ABAP Cloud Project_ in ADT
+### Exercise 0.2: Create an _ABAP Cloud Project_ in ADT
 
 > Create an _**ABAP Cloud Project**_ in your ADT installation to connect it to the provided **SAP Business AI Platform, ABAP environment** system.
 
@@ -67,7 +70,7 @@ In this exercise, you will choose a unique suffix for your development objects a
       | E-Mail or User Name: | **AD260-###@education.cloud.sap** (where `###` is your personal suffix)  |
       | Password: | _provided in the handout or by the speaker team_ |
           
-      The **Fiori Launchpad** of the SAP BAIP, ABAP environment is now opened.
+      The cockpit of the SAP BAIP, ABAP environment is now opened.
 
     - Now, copy the ABAP system URL from the address bar to the clipboard.  
     
@@ -86,9 +89,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 
    Proceed with the following steps if you're not logged in automatically:
 
-   - Choose the identity provider **`tdct3----.accounts.ondemand.com`** in the browser to sign in, if requested.   
-   
-     > <img alt="Sign in - IDP Choice" src="images/idp_choice.png" width="30%">
+   - If the **Welcome to ABAP_TARGET!** page appears, choose the identity provider **`tdct3----.accounts.ondemand.com`** in the browser to continue.   
 
    - Sign in with the user credentials provided in the handout:
    
@@ -104,7 +105,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 </details>
 
 
-## Exercise 0.3: Solution Package
+### Exercise 0.3: Solution Package
 
 > Participants of SAP-led events, such as on-site SAP TechEd 2026 events, will find the solution package `ZRAP201_SOL` in the dedicated ABAP system provided by SAP.
 
@@ -127,14 +128,14 @@ In this exercise, you will choose a unique suffix for your development objects a
 </details>
 
 
-## Exercise 0.4: Useful information 
+### Exercise 0.4: Useful information 
    
 > This section contains some useful information for the exercises: Find and replace, modern ABAP syntax, and useful ADT shortcuts.
 
 <details>
   <summary>Click to expand!</summary>
  
-### Find/Replace
+#### Find/Replace
 
 In the course of these exercises you will frequently see the task to "_replace the placeholder **`###`** with your personal suffix_". 
 
@@ -142,14 +143,14 @@ To achieve that, it's recommended to make use of the **Find/Replace** function (
    
 <img alt="Find and replace" src="../images/adt_find_replace.png" width="60%">    
   
-### Modern ABAP Syntax
+#### Modern ABAP Syntax
 
 The modern, declarative, and expression-oriented ABAP language syntax will be used in the different exercises. It allows developers to write more simple and concise source code using new language features like inline declarations, constructor expressions.
 
 > 💡 Find more information in the ABAP Keyword Documentation: [ABAP - Programming Language](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenabap_reference.htm) 
 
   
-### Useful ADT for Eclipse Shortcuts
+#### Useful ADT for Eclipse Shortcuts
 
 > 💡 You can display the full list of available shortcuts in the **Show Key Assit** in ADT by pressing **Ctrl+Shift+L**.
    
