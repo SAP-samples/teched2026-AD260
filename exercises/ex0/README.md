@@ -139,7 +139,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 > This section contains some useful information for the exercises: Find and replace, modern ABAP syntax, and useful ADT shortcuts.
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>🔵 Click to expand!</summary>
  
 ### Find/Replace
 
