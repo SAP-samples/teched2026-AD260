@@ -72,24 +72,18 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
   - Implement event-driven side effects
   - Create a read-only RAP Analytical Table for reporting
 
-  The RAP Business Object consists of two entities:
-  - **Travel** (root entity)
-  - **Booking** (child entity)
-
 🏁 **Resulting apps:** 
 
   <table border="1">
     <thead>
       <tr>
-        <td><b>Exercise blocks A + B</b></td>
-        <td><b>Transactional Travel Processing App</b></th>
+        <td><b>Exercise blocks <br/>A + B</b> <br/><br/><b>Transactional Travel Processing App</b></td>
         <td><img alt="Travel Processing App Preview (Block A-B)" src="exercises/images/rap201-travel-processing-app01.png" width="100%"></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><b>Exercise blocks A + C</b></td>
-        <td><b>Read-only Travel Reporting App</b></td>
+        <td><b>Exercise blocks <br/>A + C</b> <br/><br/><b>Read-only Travel Reporting App</b></td>
         <td><img alt="Travel Reporting App Preview (Block A-C)" src="exercises/images/rap201-travel-reporting-app01.png" width="100%"></td>
       </tr>
     </tbody>
@@ -99,10 +93,13 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 
 🗃️ **Underlying simplified Flight data model**
 
+  The _Travel_ RAP business object used in this hands-on workshop consists of two business entities:
+  - **Travel** (root entity)
+  - **Booking** (child entity)
+    
 <table border="1">
     <thead>
       <tr>
-        <td><b>Underlying simplified Flight data model</b></th>
         <td><img alt="Underlying simplified data model" src="exercises/images/rap201_datamodel01.png" width="80%"></th>
       </tr>
     </thead>
@@ -190,8 +187,12 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 You can find more information about RAP and related topics here:
 
 - [ABAP RESTful Application Programming Model – Documentation](https://help.sap.com/docs/abap-cloud/abap-rap/abap-restful-application-programming-model)
-- [Develop and Run a Fiori Application with SAP Business Application Studio](https://developers.sap.com/mission.sap-fiori-abap-rap100.html)
-- [SAP BTP ABAP Environment Community](https://community.sap.com/topics/btp-abap-environment)
+- [ABAP Development at SAP Community](https://pages.community.sap.com/topics/abap)
+- [SAP BTP ABAP Environment at SAP Community](https://community.sap.com/topics/btp-abap-environment)
+- [How to implement business AI capabilities in ABAP Cloud](https://community.sap.com/t5/devtoberfest/how-to-implement-business-ai-capabilities-in-abap-cloud/ev-p/14466672) (_video_)
+- [Business AI in ABAP Cloud – A Strategic Overview (Part 1)](https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-a-strategic-overview-part-1/ba-p/14500255) (_blog post_)
+- [Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK (Part 2)](https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk-part-2/ba-p/14501649) (_blog post_)
+
 
 ## Contributing
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
