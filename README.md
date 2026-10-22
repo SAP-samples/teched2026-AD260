@@ -35,7 +35,6 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 
 <!--
 ## Requirements for attending this workshop
-[^Top of page](#)
 
 > To complete the practical exercises in this workshop, you need:
 > - An SAP BTP ABAP Environment system (e.g. SAP BTP Trial), **or** access to an SAP S/4HANA Cloud Public Edition system
@@ -58,7 +57,6 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 -->
 
 ## Overview
-[^Top of page](#)
 
 In this hands-on workshop, you will build and enhance an SAP Fiori elements-based _Travel Processing_ application (_Travel_ app for short) using recent innovations delivered in the ABAP RESTful Application Programming Model (RAP), which is at the center of the ABAP Cloud development model when it comes to building transactional business apps, local APIs, and OData-based web services.
 
@@ -108,7 +106,6 @@ In this hands-on workshop, you will build and enhance an SAP Fiori elements-base
 </details>
 
 ## Exercises
-[^Top of page](#)
 
 Follow the step-by-step instructions provided in the different exercises to build and enhance an application to process  _Travel_ records using the ABAP RESTful Application Programming Model (RAP).
 
@@ -150,7 +147,6 @@ In this exercise block, you build a new consumption app with basic analytical ca
 <!--
 
 ## Solution Package
-[^Top of page](#)
 
 You can find the resulting apps in the solution package ![package](exercises/images/adt_package.png)**`ZRAP201_SOL`** in the dedicated SAP TechEd system.
 
@@ -171,19 +167,17 @@ You can find the resulting apps in the solution package ![package](exercises/ima
 -->
 
 ## Known Issues
-[^Top of page](#)
 
 No known issues.
 
 ## How to obtain support
-[^Top of page](#)
 
 [Create an issue](../../issues) in this repository if you find a bug or have questions about the content.
 
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 
 ## Further Information
-[^Top of page](#)
+[^Top of page](#introduction)
 
 You can find more information about RAP and related topics here:
 
