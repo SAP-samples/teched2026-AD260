@@ -7,7 +7,7 @@
 This repository contains the material for the SAP TechEd 2026 hands-on workshop **[AD260 (aka RAP201) – Level up SAP Fiori app development with ABAP Cloud innovations and the Joule solution](https://www.sap.com/events/teched/berlin/flow/sap/te26/catalog/page/catalog/session/1786351344862001z6EH)**. 
 
 This hands-on workshop allows developers to explore innovations in the ABAP Cloud development model, especially the ABAP RESTful Application Programming Model, to build modern transactional SAP Fiori apps and services. Generate multi-node business objects and use capabilities like event-driven side effects, collaborative draft, background processing, and analytical tables for a greater end-user experience. Use the SAP Joule for Developers add-on to accelerate your development.
-
+ 
 <!--
 This hands-on workshop allows developers to explore various ABAP Cloud features, especially within the ABAP RESTful Application Programming Model (RAP), through a guided scenario: 
 - ADT wizard "_From Scratch OData UI Service_" to generate an UI service based on a multi-node RAP BO, with SAP Joule forDeveloper from scratch 
