@@ -68,7 +68,7 @@ In this exercise, you will choose a unique suffix for your development objects a
     - Start the browser by double-clicking the icon on the desktop.
     - Type the short link from the handout into the address bar of your browser and press **Enter**.
       
-      > 💡 Choose the identity provider `tdct3----.accounts.ondemand.com` in the browser to sign in if requested.
+      > 💡 Choose the identity provider `tdct3....ondemand.com` in the browser to sign in if requested.
       > 
       > <img alt="Create ABAP Project Cloud 1/2" src="images/idp_choice.png" width="30%"> 
       
@@ -99,7 +99,7 @@ In this exercise, you will choose a unique suffix for your development objects a
 
    Proceed with the following steps if you're not logged in automatically:
 
-   > 💡 Choose the identity provider `tdct3----.accounts.ondemand.com` in the browser to sign in if requested.
+   > 💡 Choose the identity provider `tdct3....ondemand.com` in the browser to sign in if requested.
    
    - Sign in with the user credentials provided in the handout:
    
