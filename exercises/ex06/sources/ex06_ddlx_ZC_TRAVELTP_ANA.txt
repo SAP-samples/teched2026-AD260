@@ -11,7 +11,7 @@
   
   presentationVariant: [{ text           : 'Default' ,
                           sortOrder      : [{ by: 'TravelID', direction: #DESC } ],
-//                          groupBy        : [ 'AgencyID' ],
+//                          groupBy        : [ 'Status' ],
                           visualizations : [{ type: #AS_LINEITEM },
                                             { type: #AS_LINEITEM } ] }]
 }
