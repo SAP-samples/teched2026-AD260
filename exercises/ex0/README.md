@@ -68,9 +68,9 @@ In this exercise, you will choose a unique suffix for your development objects a
     - Start the browser by double-clicking the icon on the desktop.
     - Type the short link from the handout into the address bar of your browser and press **Enter**.
       
-      >> ℹ️ If the **Welcome to ABAP_TARGET!** page appears:
-      >>  
-      >> Click the **`tdct3----.accounts.ondemand.com`** link in the browser to continue.  
+      > 💡 Choose the identity provider `tdct3----.accounts.ondemand.com` in the browser to sign in if requested.
+      > 
+      > <img alt="Create ABAP Project Cloud 1/2" src="images/idp_choice.png" width="30%"> 
       
     - Enter the user credentials provided in the handout and press **Confirm** to sign in.   
 
@@ -85,9 +85,9 @@ In this exercise, you will choose a unique suffix for your development objects a
     
       You will use it in the next step to create your ABAP Cloud project in ADT.
     
-      >> ℹ️ Copy the URL without the `/ui#Shell-home` part at the end!
-      >> 
-      >> ABAP Service Instance URL: `https://<instance_number>.abap.<region>.hana.ondemand.com`
+      > 💡 Copy the URL without the `/ui#Shell-home` part at the end!
+      > 
+      > ABAP Service Instance URL: `https://<instance_number>.abap.<region>.hana.ondemand.com`
 
    <img alt="Resolving short URl" src="images/ex0-resolve-short-url.png" width="100%">
 
@@ -99,9 +99,8 @@ In this exercise, you will choose a unique suffix for your development objects a
 
    Proceed with the following steps if you're not logged in automatically:
 
-   >> ℹ️ If the **Welcome to ABAP_TARGET!** page appears:   
-   >> Click the `tdct3----.accounts.ondemand.com` link in the browser to continue.  
-
+   > 💡 Choose the identity provider `tdct3----.accounts.ondemand.com` in the browser to sign in if requested.
+   
    - Sign in with the user credentials provided in the handout:
    
      | Property | Value |
