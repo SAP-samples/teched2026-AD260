@@ -181,6 +181,7 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 
 You can find more information about RAP and related topics here:
 
+- [ABAP Cloud Learning Map](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-cloud-learning-map/ba-p/14338279)
 - [ABAP RESTful Application Programming Model – Documentation](https://help.sap.com/docs/abap-cloud/abap-rap/abap-restful-application-programming-model)
 - [ABAP Development at SAP Community](https://pages.community.sap.com/topics/abap)
 - [SAP BTP ABAP Environment at SAP Community](https://community.sap.com/topics/btp-abap-environment)
