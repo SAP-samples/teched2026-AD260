@@ -491,8 +491,8 @@ In this exercise, you will create a read-only _Travel_ app based on the read-onl
 3. Verify that:
    - The analytical table displays Travel data with aggregated values.
    - You can group, filter, and sort the data in the analytical table via ![](../images/icon_gear.png), the **Settings** icon:
-     - Group the _travel_ records by the travel status field **`Status`** --> **Group By Travel Status**
-     - Group the _booking_ records by the carrier ID field **`CarrierId`** --> **Group By `Airline ID`** 
+     - Group the _travel_ records by the travel status field **`Status`** --> **Group By `Status`**
+     - Group the _booking_ records by the carrier ID field **`CarrierId`** --> **Group By `Carrier ID`** 
         
    <br/>
    
