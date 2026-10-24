@@ -1,0 +1,38 @@
+projection implementation in class ZBP_C_TRAVELTP### unique;
+strict ( 2 );
+extensible;
+use draft;
+define behavior for ZC_TRAVELTP### alias TravelTP
+extensible
+use etag
+{
+
+  field ( readonly ) TravelID, Status, ReviewStatus, Notification;  //ex02
+
+  use create;
+  use update;
+  use delete;
+
+  use action bookTravel;
+  use action cancelTravel;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use association _BookingTP { create; with draft; }
+
+}
+
+define behavior for ZC_BOOKINGTP### alias BookingTP
+extensible
+use etag
+{
+  use update;
+  use delete;
+
+  use association _TravelTP { with draft; }
+
+}

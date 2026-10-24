@@ -1,0 +1,76 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    title.type      : #STANDARD,
+    title.value     : 'BookingID',
+    typeName        : 'Booking',
+    typeNamePlural  : 'Bookings',
+    description     : { type: #STANDARD, value: 'BookingID' }
+  },
+  presentationVariant: [{ text: 'Default',
+                          sortOrder:[{ by: 'BookingID', direction: #DESC }],
+                          //groupBy: [ 'CarrierID' ],
+                          visualizations: [{ type: #AS_LINEITEM },
+                                           { type: #AS_LINEITEM }] }]
+}
+annotate view ZC_BOOKINGTP### with
+{
+  @UI.facet: [ {
+    label    : 'General Information',
+    id       : 'GeneralInfo',
+    purpose  : #STANDARD,
+    position : 10 ,
+    type     : #IDENTIFICATION_REFERENCE
+  } ]
+
+  @EndUserText.label: 'Booking UUID'
+  @UI.hidden: true
+  UUID;
+
+  @EndUserText.label: 'Travel UUID'
+  @UI.hidden: true
+  ParentUUID;
+
+  @UI: {
+        lineItem:       [ { position: 20, label: 'Booking ID', importance: #HIGH } ],
+        identification: [ { position: 20, label: 'Booking ID' } ]
+  }
+  bookingid;
+
+  @UI: {
+        lineItem:       [ { position: 30, label: 'Booking Date' } ],
+        identification: [ { position: 30, label: 'Booking Date' } ]
+  }
+  BookingDate;
+
+  @UI: {
+        lineItem:       [ { position: 40, label: 'Customer ID' } ],
+        identification: [ { position: 40, label: 'Customer ID' } ]
+  }
+  CustomerID;
+
+  @UI: {
+        lineItem:       [ { position: 50, label: 'Carrier ID' } ],
+        identification: [ { position: 50, label: 'Carrier ID' } ]
+  }
+  CarrierID;
+
+  @UI: {
+        lineItem:       [ { position: 60, label: 'Connection ID' } ],
+        identification: [ { position: 60, label: 'Connection ID' } ]
+  }
+  ConnectionID;
+
+  @UI: {
+        lineItem:       [ { position: 70, label: 'Flight Date' } ],
+        identification: [ { position: 70, label: 'Flight Date' } ]
+  }
+  FlightDate;
+
+  @UI: {
+        lineItem:       [ { position: 80, label: 'Flight Price' } ],
+        identification: [ { position: 80, label: 'Flight Price' } ]
+  }
+  FlightPrice;
+
+}

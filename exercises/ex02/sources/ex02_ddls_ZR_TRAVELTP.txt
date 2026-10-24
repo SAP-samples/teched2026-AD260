@@ -1,0 +1,48 @@
+@ClientHandling.type: #CLIENT_DEPENDENT
+@AbapCatalog.deliveryClass: #APPLICATION_DATA
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.allowExtensions: true
+@ObjectModel.sapObjectNodeType.name: 'ZTravelTP###'
+@EndUserText.label: '###GENERATED Core Data Service Entity'
+@ObjectModel.semanticKey: [ 'TravelID' ]
+define root table entity ZR_TRAVELTP###
+{
+  key UUID               : sysuuid_x16;
+      TravelID           : abap.numc( 8 );
+      AgencyID           : abap.numc( 6 );
+      CustomerID         : abap.numc( 6 );
+      BeginDate          : abap.datn;
+      EndDate            : abap.datn;
+      @Semantics.amount.currencyCode: 'CurrencyCode'
+      BookingFee         : abap.curr( 16, 2 );
+      @Semantics.amount.currencyCode: 'CurrencyCode'
+      TotalPrice         : abap.curr( 16, 2 );
+      @Consumption.valueHelpDefinition: [ {
+        entity.name      : 'I_CurrencyStdVH',
+        entity.element   : 'Currency',
+        useForValidation : true
+      } ]
+      CurrencyCode       : abap.cuky;
+      Description        : abap.string( 0 ) null;
+      Status             : abap.char( 1 );
+      ReviewStatus       : int1;
+      Notification       : abap.char( 60 );
+      @Semantics.user.createdBy: true
+      LocalCreatedBy     : abp_creation_user;
+      @Semantics.systemDateTime.createdAt: true
+      LocalCreatedAt     : abp_creation_tstmpl;
+      @Semantics.user.localInstanceLastChangedBy: true
+      LocalLastChangedBy : abp_locinst_lastchange_user;
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      LocalLastChangedAt : abp_locinst_lastchange_tstmpl;
+      @Semantics.systemDateTime.lastChangedAt: true
+      LastChangedAt      : abp_lastchange_tstmpl;
+
+      //child composition
+      _BookingTP         : composition of exact one to many ZR_BOOKINGTP###;
+
+      //Associations
+      _Agency            : association to one /DMO/I_Agency on $projection.AgencyID = _Agency.AgencyID;
+      _Customer          : association to one /DMO/I_Customer on $projection.CustomerID = _Customer.CustomerID;
+      _TravelStatus      : association to one /DMO/I_Travel_Status_VH on $projection.Status = _TravelStatus.TravelStatus;
+}

@@ -1,0 +1,62 @@
+managed implementation in class ZBP_R_TRAVELTP### unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_TRAVELTP### alias TravelTP
+extensible
+draft table ZR_TRAVELTP_D###
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master ( global )
+{
+  field ( readonly )
+  UUID,
+  LocalCreatedBy,
+  LocalCreatedAt,
+  LocalLastChangedBy,
+  LocalLastChangedAt,
+  LastChangedAt;
+
+  field ( numbering : managed )
+  UUID;
+
+  create;
+  update ( features : instance );                                    //ex02
+  delete ( features : instance );                                    //ex02
+
+  determination setTravelId on modify { create; }
+  determination setStatusToNew on modify { create; }                 //ex02
+
+  action ( features : instance ) bookTravel result [1] $self;        //ex02
+  action ( features : instance ) cancelTravel result [1] $self;      //ex02
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _BookingTP { create; with draft; }
+
+}
+
+define behavior for ZR_BOOKINGTP### alias BookingTP
+extensible
+draft table ZR_BOOKINGTP_D###
+etag dependent by _TravelTP
+lock dependent by _TravelTP
+authorization dependent by _TravelTP
+{
+  field ( readonly )
+  UUID,
+  ParentUUID;
+
+  field ( numbering : managed )
+  UUID;
+
+  update;
+  delete;
+
+  association _TravelTP { with draft; }
+
+}

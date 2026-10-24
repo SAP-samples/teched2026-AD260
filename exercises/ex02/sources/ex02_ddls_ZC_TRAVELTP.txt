@@ -1,0 +1,64 @@
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText: {
+  label: '###GENERATED Core Data Service Entity'
+}
+@ObjectModel: {
+  sapObjectNodeType.name: 'ZTravelTP###',
+  semanticKey: [ 'TravelID' ]
+}
+@AccessControl.authorizationCheck: #CHECK
+@Search.searchable: true
+define root view entity ZC_TRAVELTP###
+  provider contract transactional_query
+  as projection on ZR_TRAVELTP###
+  association [1..1] to ZR_TRAVELTP### as _BaseEntity on $projection.UUID = _BaseEntity.UUID
+{
+  key UUID,
+
+      TravelID,
+
+      @Search.defaultSearchElement: true
+      @ObjectModel.text.element: ['AgencyName']
+      @Consumption.valueHelpDefinition: [{ entity : {name: '/DMO/I_Agency_StdVH', element: 'AgencyID' }, useForValidation: true }]
+      AgencyID,
+      _Agency.Name             as AgencyName,
+
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.90
+      @ObjectModel.text.element: ['CustomerName']
+      @Consumption.valueHelpDefinition: [{ entity : {name: '/DMO/I_Customer_StdVH', element: 'CustomerID' }, useForValidation: true }]
+      CustomerID,
+      _Customer.LastName       as CustomerName,
+
+      BeginDate,
+      EndDate,
+      @Semantics: { amount.currencyCode: 'CurrencyCode' }
+      BookingFee,
+      @Semantics: { amount.currencyCode: 'CurrencyCode' }
+
+      TotalPrice,
+      @Consumption: {
+        valueHelpDefinition: [ {
+          entity.element: 'Currency',
+          entity.name: 'I_CurrencyStdVH',
+          useForValidation: true
+        } ]
+      }
+      CurrencyCode,
+      Description,
+
+      @ObjectModel.text.element: ['TravelStatusText']
+      @Consumption.valueHelpDefinition: [{ entity: {name: '/DMO/I_Travel_Status_VH', element: 'TravelStatus' }, useForValidation: true }]
+      Status,
+      _TravelStatus._Text.Text as TravelStatusText : localized,
+
+      ReviewStatus,
+      Notification,
+
+      @Semantics: { systemDateTime.localInstanceLastChangedAt: true }
+      LocalLastChangedAt,
+
+      _BookingTP : redirected to composition child ZC_BOOKINGTP###,
+      _BaseEntity
+}
