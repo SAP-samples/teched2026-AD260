@@ -284,7 +284,7 @@ The _Travel_ app will be based on a multi-node _Travel_ BO with two entities _Tr
 
 ## Exercise 1.4: Create a Helper Interface 
 
-> Create the interface ![](../images/adt_interface.png)`ZRAP201_IF_TRAVEL###` as helper interface to provide reuse constants and functionalities centrally.
+> Create the interface ![](../images/adt_interface.png)`ZRAP201_IF_TRAVELTP###` as helper interface to provide reuse constants and functionalities centrally.
 
 <details>
   <summary>🔵 Click to expand!</summary>
