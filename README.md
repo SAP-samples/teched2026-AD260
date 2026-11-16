@@ -34,6 +34,10 @@ This hands-on workshop allows developers to explore various ABAP Cloud features,
 - [Further Information](#further-information)
 
 <!--
+Test
+-->
+
+<!--
 ## Requirements for attending this workshop
 
 > To complete the practical exercises in this workshop, you need:
