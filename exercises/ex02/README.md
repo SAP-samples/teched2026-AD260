@@ -194,15 +194,14 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
 3. Now proceed with the implementation of the determination **`setStatusToNew`**, which sets the **`Status`** field to _New_ (**`N`**) at the creation time of a new _travel_ entity.
       
    To achieve this, 
-   - go to the **`setStatusToNew`** method implementation,
-   - delete the current implementation,
-   - set the cursor in the empty method,
-   - press **Ctrl+1** to open the **Quick Fix** view,
-   - select the **Predict RAP Business Logic** entry to start the **`/raplogic`** skill in the 💎Joule chat.
+   - Go to the **`setStatusToNew`** method implementation,
+   - Delete the current implementation,
+   - Set the cursor in the empty method,   
+   - Start the **Predict RAP Business Logic** skill by entering **`/raplogic`** in the 💎Joule chat and pressing **Enter**.  
 
-     > 💡 The **RAP business logic prediction** (`/raplogic`) is a capability in SAP Joule for Developers, ABAP AI capabilities. It supports you in implementing determinations or validations in the implementation class of your behavior definition.([Learn more...](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/rap-business-logic-prediction))     
+     <img alt="Joule Skills: /raplogic" src="images/ex02-predict-rap-buslogic01-b.png" width="100%">  
 
-     <img alt="Joule Skills: /raplogic" src="images/ex02-predict-rap-buslogic01.png" width="100%">  
+     > 💡 The **RAP business logic prediction** (`/raplogic`) is a capability in SAP Joule for Developers, ABAP AI capabilities. It supports you in implementing determinations or validations in the implementation class of your behavior definition.([Learn more...](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/rap-business-logic-prediction))  
 
    Now, 
    - Insert the prompt below in the 💎Joule chat, and
@@ -220,7 +219,7 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
      - Review the code suggestion in the 💎Joule view,
      - Press **Apply** to insert it into the editor,
      - Review the changes that will be applied in the **Code Review Dialog**, and
-     - press **Finish** to confirm the changes. 
+     - Press **Finish** to confirm the changes. 
 
        > 💡 If an error is displayed in the editor, make sure the correct artifact and field names are used in the porposed business logic.
     
@@ -264,16 +263,15 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
 4. **Implement the determination `setTravelId`**, which determines the value of the **`TravelID`** field (used as semantic key) at the creation time of a new _travel_ entity.
 
    To achieve this, 
-   - go to the **`setTravelId`** method implementation,
-   - delete the current implementation,
-   - in the empty method,
-   - press **Ctrl+1** to open the **Quick Fix** view,
-   - select the **Predict RAP Business Logic** entry to start the **`/raplogic`** skill in the 💎Joule chat.
+   - Go to the **`setTravelId`** method implementation,
+   - Delete the current implementation,
+   - Set the cursor in the empty method,   
+   - Start the **Predict RAP Business Logic** skill by entering **`/raplogic`** in the 💎Joule chat and pressing **Enter**.  
    
    Then, 
    - Insert the prompt below in the 💎Joule chat, and
-   - replace ### with your group-id and
-   - press **Enter** or click the **Send** icon.
+   - Replace ### with your group-id and
+   - Press **Enter** or click the **Send** icon.
    
      ```
      Fill the semantic ID field "TravelID" for every newly created Travel instance.
