@@ -106,9 +106,9 @@ The following enhancements have been defined in the base behavior definition ![]
    - Action **`bookTravel`**: to set the field `Status` to _Booked_ (`B`) of a _travel_ entity.
    - Action **`cancelTravel`**: to set the field `Status` to _Cancelled_ (`X`) of a _travel_ entity.
    - Dynamic feature control:
-     - to disable the **_Book Travel_** button when `Status` is set to _Cancelled_ (`X`) or `ReviewStatus` is set to _Planned_ (`2`)
-     - to disable the **_Cancel Travel_** button when a _travel_ record is set to _Booked_ (`B`) or `ReviewStatus` is set to _Planned_ (`2`)
-     - to disable the **_Edit_** button when `Status` is set to _Booked_ (`B`) or `ReviewStatus` is set to _Planned_ (`2`)
+     - To disable the **_Book Travel_** button when `Status` is set to _Cancelled_ (`X`) or `ReviewStatus` is set to _Planned_ (`2`)
+     - To disable the **_Cancel Travel_** button when a _travel_ record is set to _Booked_ (`B`) or `ReviewStatus` is set to _Planned_ (`2`)
+     - To disable the **_Edit_** button when `Status` is set to _Booked_ (`B`) or `ReviewStatus` is set to _Planned_ (`2`)
 
 <br/>
 
@@ -203,10 +203,10 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
 
      > 💡 The **RAP business logic prediction** (`/raplogic`) is a capability in SAP Joule for Developers, ABAP AI capabilities. It supports you in implementing determinations or validations in the implementation class of your behavior definition.([Learn more...](https://help.sap.com/docs/abap-cloud/abap-development-tools-user-guide/rap-business-logic-prediction))  
 
-   Now, 
+   Then, 
    - Insert the prompt below in the 💎Joule chat, and
-   - replace ### with your group-id and
-   - press **Enter** or click the **Send** icon.   
+   - Replace ### with your group-id and
+   - Press **Enter** or click the **Send** icon.   
      
      ```
      Set the fields Status and ReviewStatus to "new" at creation time of a new travel entity, 
@@ -215,15 +215,15 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
   
      After a few seconds, 💎Joule will suggest an implementation. 
      
-     Now,
-     - Review the code suggestion in the 💎Joule view,
-     - Press **Apply** to insert it into the editor,
-     - Review the changes that will be applied in the **Code Review Dialog**, and
-     - Press **Finish** to confirm the changes. 
+   Now,
+   - Review the code suggestion in the 💎Joule view,
+   - Press **Apply** to insert it into the editor,
+   - Review the changes that will be applied in the **Code Review Dialog**, and
+   - Press **Finish** to confirm the changes. 
 
-       > 💡 If an error is displayed in the editor, make sure the correct artifact and field names are used in the porposed business logic.
+     > 💡 If an error is displayed in the editor, make sure the correct artifact and field names are used in the porposed business logic.
     
-       <img alt="Joule Skills: /raplogic" src="images/ex02-predict-rap-buslogic02.png" width="100%">  
+     <img alt="Joule Skills: /raplogic" src="images/ex02-predict-rap-buslogic02.png" width="100%">  
     
    <br/>
    
@@ -283,18 +283,18 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
 
      After a few seconds, 💎Joule will suggest an implementation. 
      
-     Now,
-     - Review the code suggestion in the 💎Joule view,
-     - Press **Apply** to insert it into the editor,
-     - Review the changes that will be applied in the **Code Review Dialog**, and
-     - press **Finish** to confirm the changes. 
+   Now,
+   - Review the code suggestion in the 💎Joule view,
+   - Press **Apply** to insert it into the editor,
+   - Review the changes that will be applied in the **Code Review Dialog**, and
+   - Press **Finish** to confirm the changes. 
 
-       > 💡 If an error is displayed in the editor, make sure the correct artifact and field names are used in the porposed business logic.
+     > 💡 If an error is displayed in the editor, make sure the correct artifact and field names are used in the porposed business logic.
 
-    <br/>
+     <br/>
    
-    <details>
-      <summary>ℹ️ Click to expand the backup implementation for `setTravelId()`!</summary>
+   <details>
+    <summary>ℹ️ Click to expand the backup implementation for `setTravelId()`!</summary>
       
     ```abap
       METHOD setTravelId.
@@ -330,7 +330,7 @@ Various adjustments to the UI semantics of the _Travel_ app have been defined at
     
       ENDMETHOD.  
     ```
-    </details>   
+   </details>   
    
 9. Play around with the enhanced app to test the implementation. You simply need to create a new travel record 
    and check if the **Travel ID** and the **Travel Status** have been set at creation.
